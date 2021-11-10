@@ -1,4 +1,4 @@
-# dataworks-repo-template
+# dataworks-ecr-ap-r-image
 
 ## Repo for the R image used for AP
 
