@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # Build the image
-docker build -t "$IMAGE_NAME" .
+docker build -t "$IMAGE_NAME" . >/dev/null 2>&1 || echo "Build Failed"
 
 # Dev First
 DEV_REG_URL="${DEV_AWS_ACCOUNT}.dkr.ecr.${AWS_REGION}.amazonaws.com"
